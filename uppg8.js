@@ -11,6 +11,39 @@ function uppg8(){
 
 // anropa funktionen och skicka med arrayen som argument
 
+    const persons = [
+        {
+            name: 'Anna',
+            age: 40,
+        },
+        {
+            name: 'Kirill',
+            age: 41,
+        },
+        {
+            name: 'Veronica',
+            age: 2,
+        },
+        {
+            name: 'Archi',
+            age: 5,
+        },
+        {
+            name: 'Basha Rima',
+            age: 62,
+        },
+    ]
+
+    function checkAge (arr) {
+        arr.forEach(person => {
+             if (person.age > 30) {
+            console.log(person.name)
+        } 
+        });
+
+    }
+
+    checkAge(persons)
 
 }
 
